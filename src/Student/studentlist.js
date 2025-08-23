@@ -6,6 +6,7 @@ export default function Studentlist() {
   const [data, Setdata] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
+  const [msg, setMsg] = useState("");
 
   useEffect(() => {
     handleApi();
@@ -17,6 +18,8 @@ export default function Studentlist() {
       Setdata(res.data);
     } catch (error) {
       console.error("Error fetching students:", error);
+      setMsg("Failed to fetch student data. Please try again later.");
+
     }
   };
 
@@ -37,6 +40,7 @@ export default function Studentlist() {
   return (
     <div className="container">
       <div className="row">
+        {msg && <div className="alert alert-danger">{msg}</div>}
         <div className="col-md-offset-1 col-md-10">
           <div className="panel">
             <div className="panel-heading">

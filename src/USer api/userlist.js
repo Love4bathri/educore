@@ -6,6 +6,7 @@ export default function Userlist() {
     const [data, Setdata] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 5;
+    const [msg , setMsg] = useState("");
 
     useEffect(() => {
         handleApi();
@@ -17,9 +18,14 @@ export default function Userlist() {
     }
 
     async function handleApi() {
-        let url = "http://localhost:7000/api/user";
+        try{
+            let url = "http://localhost:7000/api/user";
         let response = await axios.get(url);
         Setdata(response.data.data);
+        }catch (error) {
+            console.error("Error fetching user data:", error);
+            setMsg("Failed to fetch user data. Please try again later.");
+  }
     }
 
     // Pagination calculation
@@ -32,6 +38,9 @@ export default function Userlist() {
         <>
             <div className="container">
                 <div className="row">
+                    {
+                        msg && <div className="alert alert-danger">{msg}</div>
+                    }
                     <div className="col-md-offset-1 col-md-10">
                         <div className="panel">
                             <div className="panel-heading">

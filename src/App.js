@@ -13,6 +13,7 @@ import Studentadd from './Student/studentadd';
 import Studentlist from './Student/studentlist';
 import MarkAdd from './marksheet/markAdd';
 import Marklist from './marksheet/marklist';
+import Login from './login';
  
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/marksheetlist" element={<Marklist/>}/>
         <Route path="/marksheetadd" element={<MarkAdd/>}/>
         <Route path="/marksheetadd/:pid" element={<MarkAdd/>}/>
+        <Route path="/login" element={<Login/>}/>
       </Routes>
       </BrowserRouter>
     </>

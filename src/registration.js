@@ -69,7 +69,7 @@ export default function Regis() {
             <div className="card rounded-3">
               <div className="card-body p-4 p-md-5">
                 <h3 className="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">
-                  Register User
+                  Register New User
                 </h3>
 
                 <form className="px-md-2" onSubmit={handleSubmit}>
