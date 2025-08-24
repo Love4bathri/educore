@@ -14,6 +14,12 @@ export default function MarkAdd() {
     maths: ""
   });
 
+  const total = 
+  (parseInt(data.physics) || 0) + 
+  (parseInt(data.chemistry) || 0) + 
+  (parseInt(data.maths) || 0);
+
+
   const navigate = useNavigate();
   
   const url = "https://educore-1.onrender.com/api/mark";
@@ -155,7 +161,13 @@ export default function MarkAdd() {
                     />
                     <label className="form-label">Maths</label>
                   </div>
-
+<p style={{ fontWeight: "bold", fontSize: "18px", marginTop: "10px" }}>
+  Total: { 
+    (parseInt(data.physics) || 0) + 
+    (parseInt(data.chemistry) || 0) + 
+    (parseInt(data.maths) || 0) 
+  } / 300
+</p>
                   <button type="submit" className="btn btn-primary btn-lg mt-2">
                     Submit
                   </button>
