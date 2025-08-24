@@ -24,7 +24,7 @@ const Login = () => {
 
     try {
       // 👇 Yaha apna login API URL daalna
-      const res = await fetch("http://localhost:7000/api/login", {
+      const res = await fetch("https://educore-1.onrender.com/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

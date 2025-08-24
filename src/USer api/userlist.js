@@ -13,13 +13,13 @@ export default function Userlist() {
     }, []); // ✅ No missing dependency warning
 
     async function handleDelete(id) {
-        await axios.delete("http://localhost:7000/api/user/" + id);
+        await axios.delete("https://educore-1.onrender.com/api/user/" + id);
         handleApi();
     }
 
     async function handleApi() {
         try{
-            let url = "http://localhost:7000/api/user";
+            let url = "https://educore-1.onrender.com/api/user";
         let response = await axios.get(url);
         Setdata(response.data.data);
         }catch (error) {

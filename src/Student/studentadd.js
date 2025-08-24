@@ -14,7 +14,7 @@ export default function Studentadd() {
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
   const { pid: id } = useParams();
-  const url = "http://localhost:7000/api/student";
+  const url = "https://educore-1.onrender.com/api/student";
 
   useEffect(() => {
     if (id) {

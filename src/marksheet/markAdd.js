@@ -16,7 +16,7 @@ export default function MarkAdd() {
 
   const navigate = useNavigate();
   
-  const url = "http://localhost:7000/api/mark";
+  const url = "https://educore-1.onrender.com/api/mark";
   const { pid } = useParams();
 
   

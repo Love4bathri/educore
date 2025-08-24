@@ -14,7 +14,7 @@ export default function Studentlist() {
 
   const handleApi = async () => {
     try {
-      const res = await axios.get("http://localhost:7000/api/student");
+      const res = await axios.get("https://educore-1.onrender.com/api/student");
       Setdata(res.data);
     } catch (error) {
       console.error("Error fetching students:", error);
@@ -25,7 +25,7 @@ export default function Studentlist() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete("http://localhost:7000/api/student/" + id);
+      await axios.delete("https://educore-1.onrender.com/api/student/" + id);
       handleApi();
     } catch (error) {
       console.error("Error deleting student:", error);

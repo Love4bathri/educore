@@ -13,7 +13,7 @@ export default function Regis() {
 
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
-  const url = "http://localhost:7000/api/user";
+  const url = "https://educore-1.onrender.com/api/user";
 
   const handleChange = (e) => {
     const { name, value } = e.target;

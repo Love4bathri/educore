@@ -1,10 +1,9 @@
 import axios from 'axios';
- 
-import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 import { useEffect, useState } from "react";
 function Marklist() {
     const [data, SetData] = useState([]);
-    const url = "http://localhost:7000/api/mark";
+    const url = "https://educore-1.onrender.com/api/mark";
     const [msg, setMsg] = useState("");
 
     async function handleApi() {

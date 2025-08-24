@@ -16,7 +16,7 @@ export default function Useradd() {
   const navigate = useNavigate();
   const param = useParams();
 
-  let url = "http://localhost:7000/api/user";
+  let url = "https://educore-1.onrender.com/api/user";
   let id = param.pid;
 
   // ✅ Wrapped getData in useCallback to prevent ESLint warning
