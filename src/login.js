@@ -32,10 +32,11 @@ const Login = () => {
 
       const data = await res.json();
       console.log("Response:", data);
-navigate("/"); // Redirect to home page on successful login
+      navigate("/"); // Redirect to home page on successful login
+      
       if (res.ok) {
         alert("Login successful!");
-    
+
       } else {
         alert(data.message || "Login failed!");
       }

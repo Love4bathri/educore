@@ -94,7 +94,7 @@ route.post("/login", async (req, res) => {
 
     res.status(200).json({ message: 'Login successful', users });
   } catch (error) {
-    res.status(500).json({ error: 'Login failed', details: error.message });
+    res.status(500).json({ error: 'Login love failed', details: error.message });
   }
 })
 
