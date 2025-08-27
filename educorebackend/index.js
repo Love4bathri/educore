@@ -7,16 +7,22 @@ const user = require("./controller/usercontroller.js")
 const college = require("./controller/collegecontroller.js")
 const role = require("./controller/rolecontroller.js")
 const student = require("./controller/studentcontoller.js")
- 
+
 const app = express();
 app.use(cors());
 
+const Logout = (req, res, next) =>{
+console.log(`${req.orignalUrl} - ${new Date().toLocalString()}`, "hihighi");
+next();
+}
+
+ 
 app.use(express.json());
-app.use("/api", user)
-app.use("/api", college)
-app.use("/api", mark)
-app.use("/api", role)
-app.use("/api", student)
+app.use("/api",Logout, user)
+app.use("/api",Logout, college)
+app.use("/api",Logout, mark)
+app.use("/api",Logout, role)
+app.use("/api",Logout, student)
  
  
 
