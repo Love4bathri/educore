@@ -18,7 +18,8 @@ app.use("/api", mark);
 app.use("/api", role);
 app.use("/api", student); 
 
-app.listen(7000 , ()=>{
-    console.log("http://localhost:7000/user")
-})
+const PORT = process.env.PORT || 7000;   // Render production ke liye
+app.listen(PORT, () => {
+    console.log(`✅ Server running on port ${PORT}`);
+});
 
