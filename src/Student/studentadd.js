@@ -104,7 +104,7 @@ export default function Studentadd() {
                         }`}
                         placeholder="First Name"
                       />
-                      <label className="form-label">First Name</label>
+                      <label className="form-label">First Name <span style={{ color: "red" }}>*</span></label>
                       {errors.firstName && (
                         <div className="invalid-feedback">{errors.firstName}</div>
                       )}
@@ -122,7 +122,7 @@ export default function Studentadd() {
                         }`}
                         placeholder="Last Name"
                       />
-                      <label className="form-label">Last Name</label>
+                      <label className="form-label">Last Name <span style={{ color: "red" }}>*</span></label>
                       {errors.lastName && (
                         <div className="invalid-feedback">{errors.lastName}</div>
                       )}
@@ -140,7 +140,7 @@ export default function Studentadd() {
                         }`}
                         placeholder="Email ID"
                       />
-                      <label className="form-label">Email ID</label>
+                      <label className="form-label">Email ID  <span style={{ color: "red" }}>*</span></label>
                       {errors.emailId && (
                         <div className="invalid-feedback">{errors.emailId}</div>
                       )}
@@ -158,7 +158,7 @@ export default function Studentadd() {
                         }`}
                         placeholder="College ID"
                       />
-                      <label className="form-label">College ID</label>
+                      <label className="form-label">College ID <span style={{ color: "red" }}>*</span></label>
                       {errors.collegeId && (
                         <div className="invalid-feedback">{errors.collegeId}</div>
                       )}
@@ -176,7 +176,7 @@ export default function Studentadd() {
                         }`}
                         placeholder="Mobile Number"
                       />
-                      <label className="form-label">Mobile No</label>
+                      <label className="form-label">Mobile No <span style={{ color: "red" }}>*</span></label>
                       {errors.mobileNo && (
                         <div className="invalid-feedback">{errors.mobileNo}</div>
                       )}

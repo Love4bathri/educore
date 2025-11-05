@@ -105,7 +105,7 @@ export default function Useradd() {
                           className="form-label"
                           htmlFor="form3Example1q"
                         >
-                          FirstName
+                          FirstName <span style={{ color: "red" }}>*</span>
                         </label>
                       </div>
 
@@ -120,7 +120,7 @@ export default function Useradd() {
                           className="form-control"
                         />
                         <label className="form-label" htmlFor="form3Example1">
-                          LastName
+                          LastName <span style={{ color: "red" }}>*</span>
                         </label>
                       </div>
 
@@ -140,7 +140,7 @@ export default function Useradd() {
                               htmlFor="exampleDatepicker1"
                               className="form-label"
                             >
-                              LoginID
+                              LoginID   <span style={{ color: "red" }}>*</span>
                             </label>
                           </div>
                         </div>
@@ -162,7 +162,7 @@ export default function Useradd() {
                               className="form-label"
                               htmlFor="form3Example1w"
                             >
-                              Date of birth
+                              Date of birth  <span style={{ color: "red" }}>*</span>
                             </label>
                           </div>
                           <div className="form-outline">
@@ -179,7 +179,7 @@ export default function Useradd() {
                               className="form-label"
                               htmlFor="form3Example"
                             >
-                              Password
+                              Password <span style={{ color: "red" }}>*</span>
                             </label>
                           </div>
                         </div>

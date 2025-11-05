@@ -14,10 +14,10 @@ export default function MarkAdd() {
     maths: ""
   });
 
-  const total = 
-  (parseInt(data.physics) || 0) + 
-  (parseInt(data.chemistry) || 0) + 
-  (parseInt(data.maths) || 0);
+  // const total = 
+  // (parseInt(data.physics) || 0) + 
+  // (parseInt(data.chemistry) || 0) + 
+  // (parseInt(data.maths) || 0);
 
 
   const navigate = useNavigate();
@@ -99,7 +99,7 @@ export default function MarkAdd() {
                       className="form-control"
                       placeholder="Enter Name"
                     />
-                    <label className="form-label">Name</label>
+                    <label className="form-label">Name <span style={{ color: "red" }}>*</span></label>
                   </div>
 
                   <div className="form-outline mb-3">
@@ -111,7 +111,7 @@ export default function MarkAdd() {
                       className="form-control"
                       placeholder="Enter Student ID"
                     />
-                    <label className="form-label">Student ID</label>
+                    <label className="form-label">Student ID <span style={{ color: "red" }}>*</span></label>
                   </div>
 
                   <div className="form-outline mb-3">
@@ -123,7 +123,7 @@ export default function MarkAdd() {
                       className="form-control"
                       placeholder="Roll No"
                     />
-                    <label className="form-label">Roll No</label>
+                    <label className="form-label">Roll No <span style={{ color: "red" }}>*</span></label>
                   </div>
 
                   <div className="form-outline mb-3">
@@ -135,7 +135,7 @@ export default function MarkAdd() {
                       className="form-control"
                       placeholder="Physics"
                     />
-                    <label className="form-label">Physics</label>
+                    <label className="form-label">Physics <span style={{ color: "red" }}>*</span></label>
                   </div>
 
                   <div className="form-outline mb-3">
@@ -147,7 +147,7 @@ export default function MarkAdd() {
                       className="form-control"
                       placeholder="Chemistry"
                     />
-                    <label className="form-label">Chemistry</label>
+                    <label className="form-label">Chemistry <span style={{ color: "red" }}>*</span></label>
                   </div>
 
                   <div className="form-outline mb-3">
@@ -159,7 +159,7 @@ export default function MarkAdd() {
                       className="form-control"
                       placeholder="Maths"
                     />
-                    <label className="form-label">Maths</label>
+                    <label className="form-label">Maths <span style={{ color: "red" }}>*</span></label>
                   </div>
 <p style={{ fontWeight: "bold", fontSize: "18px", marginTop: "10px" }}>
   Total: { 
@@ -168,7 +168,7 @@ export default function MarkAdd() {
     (parseInt(data.maths) || 0) 
   } / 300
 </p>
-                  <button type="submit" className="btn btn-primary btn-lg mt-2">
+            <button type="submit" className="btn btn-primary btn-lg mt-2">
                     Submit
                   </button>
                 </form>
